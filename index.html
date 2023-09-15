@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .holder {
+            display: flex;
+            outline: 2px solid black;
+            width: 300px;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            margin: 50px;
+        }
+
+        .item {
+            display: flex;
+            outline: 2px solid black;
+            height: 35px;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .first {
+            flex-basis: 50%;
+            order: -1;
+            background-color: tomato;
+        }
+
+        .fifth {
+            flex-basis: 50%;
+            order: -1;
+            background-color: orange;
+        }
+
+        .third {
+            background-color: rgb(101, 31, 167);
+        }
+
+        .second {
+            order: 1;
+            background-color: cornflowerblue;
+        }
+
+        .fourth {
+            order: 1;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="holder">
+        <div class="item first">1</div>
+        <div class="item second">2</div>
+        <div class="item third">3</div>
+        <div class="item fourth">4</div>
+        <div class="item fifth">5</div>
+    </div>
+</body>
+</html>
